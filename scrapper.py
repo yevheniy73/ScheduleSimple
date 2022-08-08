@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 import requests
 import sqlite3
 import numpy as np
+import os
+import re
 
 has_conflict = False
 day_letters = ["M", "T", "W", "H", "F"]
@@ -60,12 +62,6 @@ def convert_day(day):
 
 # con.commit()
 
-
-url = f"https://www.beartracks.ualberta.ca/psc/uahebprd_4/EMPLOYEE/HRMS/c/SSR_STUDENT_FL.SSR_MD_SP_FL.GBL?Action=U&MD=Y&GMenu=SSR_STUDENT_FL&GComp=SSR_START_PAGE_FL&GPage=SSR_START_PAGE_FL&scname=CS_SSR_MANAGE_CLASSES_NAV"
-result = requests.get(url)
-doc = BeautifulSoup(result.text, 'lxml')
-datesTimes = doc.find_all("td",  {"data-card-title":"Section"})
-
 #=========================================================================================================================
 
 course_names_selected = []
@@ -95,13 +91,45 @@ for db_course in cur.execute('''SELECT * FROM cmput_courses WHERE section_type =
 #=========================================================================================================================
 
 # print out the schedule at the end
-for i in range(len(schedule)):
-    print(day_letters[i])
-    for j in range(len(schedule[i])):
-        print(schedule[i][j])
-    print("")
+# for i in range(len(schedule)):
+#     print(day_letters[i])
+#     for j in range(len(schedule[i])):
+#         print(schedule[i][j])
+#     print("")
 
 # for db_course in cur.execute('''SELECT * FROM cmput_courses WHERE section_type="LECTURE"'''):
 #     print(db_course)
 
 #=========================================================================================================================
+
+print(schedule[0])
+
+base = os.path.dirname(os.path.abspath(__file__))
+
+
+html_sched =open(os.path.join(base, 'SampleTemplate.html'))
+html_sched_text = BeautifulSoup(html_sched, 'lxml')
+
+
+for class_section in schedule[0]:
+
+    var1 = class_section[1].replace(":","")
+    sched_block = html_sched_text.find("td", {"id": f"M{var1}a"})
+
+    sched_block.string = "CMPUT 325 <br> LEC B1 (44762) <br> CCIS 1-140"
+    sched_block['class'] = "ZSSCLSSCHEDSTDCLS"
+    sched_block['height'] = "60"
+    sched_block['width'] = "100"
+    sched_block['rowspan'] = "6"
+    sched_block['colspan'] = "2"
+    sched_block['bgcolor'] = "#FFFF99"
+
+    sched_block = html_sched_text.find("td",  {"id":"M1115a"})
+    sched_block['class'] = sched_block.get('class', []) + ['HIDE_ME']
+
+
+
+
+
+with open("output1.html", "w") as file:
+    file.write(str(html_sched_text.prettify()))

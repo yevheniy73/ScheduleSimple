@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Table.css">
+</head>
+
+<body>
+    <table cellspacing="0" class="GRID_TABLE" id="classsched"
+        style="border-collapse: collapse; border-bottom: 1px solid black; border-right: 1px solid black;">
+        <tbody>
+            <!-- TOP TABLE ROW SEMESTER AND DAY NAMES -->
+            <tr id="grhdr">
+                <td id="gchdr" class="CHEDHDRTY">
+                    Summer<br>2022
+                </td>
+                <td class="SCHEDULE_DAY_NAME" colspan="2">
+                    Monday
+                </td>
+                <td class="SCHEDULE_DAY_NAME" colspan="2">
+                    Tuesday
+                </td>
+                <td class="SCHEDULE_DAY_NAME" colspan="2">
+                    Wednesday
+                </td>
+                <td class="SCHEDULE_DAY_NAME" colspan="2">
+                    Thursday
+                </td>
+                <td class="SCHEDULE_DAY_NAME" colspan="2">
+                    Friday
+                </td>
+            </tr>
+            <!-- 8:00 AM Title and Courses in this row for each day -->
+            <tr id="gr0800">
+                <td id="gc08" class="CHEDLEFT" rowspan="4">
+                    8:00 AM
+                </td>
+                <td id="M0800a" class="CHEDGC">&nbsp;</td>
+                <td id="M0800b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T0800a" class="CHEDGC">&nbsp;</td>
+                <td id="T0800b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W0800a" class="CHEDGC">&nbsp;</td>
+                <td id="W0800b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H0800a" class="CHEDGC">&nbsp;</td>
+                <td id="H0800b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F0800a" class="CHEDGC">&nbsp;</td>
+                <td id="F0800b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <!-- 8:15 AM Courses in this row for each day -->
+            <tr id="gr0815">
+                <!-- Column Spanned from Above -->
+                <td id="M0815a" class="CHEDGC">&nbsp;</td>
+                <td id="M0815b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T0815a" class="CHEDGC">&nbsp;</td>
+                <td id="T0815b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W0815a" class="CHEDGC">&nbsp;</td>
+                <td id="W0815b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H0815a" class="CHEDGC">&nbsp;</td>
+                <td id="H0815b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F0815a" class="CHEDGC">&nbsp;</td>
+                <td id="F0815b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <!-- 8:30 AM Courses in this row for each day -->
+            <tr id="gr0830">
+                <!-- Column Spanned from Above -->
+                <td id="M0830a" class="CHEDGC">&nbsp;</td>
+                <td id="M0830b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T0830a" class="CHEDGC">&nbsp;</td>
+                <td id="T0830b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W0830a" class="CHEDGC">&nbsp;</td>
+                <td id="W0830b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H0830a" class="CHEDGC">&nbsp;</td>
+                <td id="H0830b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F0830a" class="CHEDGC">&nbsp;</td>
+                <td id="F0830b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <!-- 8:45 AM Courses in this row for each day -->
+            <tr id="gr0845">
+                <!-- Column Spanned from Above -->
+                <td id="M0845a" class="CHEDGCB">&nbsp;</td>
+                <td id="M0845b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="T0845a" class="CHEDGC">&nbsp;</td>
+                <td id="T0845b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W0845a" class="CHEDGCB">&nbsp;</td>
+                <td id="W0845b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="H0845a" class="CHEDGC">&nbsp;</td>
+                <td id="H0845b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F0845a" class="CHEDGCB">&nbsp;</td>
+                <td id="F0845b" class="CHEDGCRB">&nbsp;</td>
+
+            </tr>
+            <!-- 9:00 AM Title and Courses in this row for each day -->
+            <tr id="gr0900">
+                <td id="gc09" class="CHEDLEFT" rowspan="4">
+                    9:00 AM
+                </td>
+                <td id="M0900a" class="CHEDGC">&nbsp;</td>
+                <td id="M0900b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T0900a" class="CHEDGC">&nbsp;</td>
+                <td id="T0900b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W0900a" class="CHEDGC">&nbsp;</td>
+                <td id="W0900b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H0900a" class="CHEDGC">&nbsp;</td>
+                <td id="H0900b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F0900a" class="CHEDGC">&nbsp;</td>
+                <td id="F0900b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr0915">
+                <!-- Column Spanned from Above -->
+                <td id="M0915a" class="CHEDGC">&nbsp;</td>
+                <td id="M0915b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T0915a" class="CHEDGCB">&nbsp;</td>
+                <td id="T0915b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="W0915a" class="CHEDGC">&nbsp;</td>
+                <td id="W0915b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H0915a" class="CHEDGCB">&nbsp;</td>
+                <td id="H0915b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="F0915a" class="CHEDGC">&nbsp;</td>
+                <td id="F0915b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr0930">
+                <!-- Column Spanned from Above -->
+                <td id="M0930a" class="CHEDGC">&nbsp;</td>
+                <td id="M0930b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T0930a" class="CHEDGC">&nbsp;</td>
+                <td id="T0930b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W0930a" class="CHEDGC">&nbsp;</td>
+                <td id="W0930b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H0930a" class="CHEDGC">&nbsp;</td>
+                <td id="H0930b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F0930a" class="CHEDGC">&nbsp;</td>
+                <td id="F0930b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr0945">
+                <!-- Column Spanned from Above -->
+                <td id="M0945a" class="CHEDGCB">&nbsp;</td>
+                <td id="M0945b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="T0945a" class="CHEDGC">&nbsp;</td>
+                <td id="T0945b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W0945a" class="CHEDGCB">&nbsp;</td>
+                <td id="W0945b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="H0945a" class="CHEDGC">&nbsp;</td>
+                <td id="H0945b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F0945a" class="CHEDGCB">&nbsp;</td>
+                <td id="F0945b" class="CHEDGCRB">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1000">
+                <td id="gc10" class="CHEDLEFT" rowspan="4">
+                    10:00 AM
+                </td>
+                <td id="M1000a" class="CHEDGC">&nbsp;</td>
+                <td id="M1000b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1000a" class="CHEDGC">&nbsp;</td>
+                <td id="T1000b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1000a" class="CHEDGC">&nbsp;</td>
+                <td id="W1000b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1000a" class="CHEDGC">&nbsp;</td>
+                <td id="H1000b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1000a" class="CHEDGC">&nbsp;</td>
+                <td id="F1000b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1015">
+                <!-- Column Spanned from Above -->
+                <td id="M1015a" class="CHEDGC">&nbsp;</td>
+                <td id="M1015b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1015a" class="CHEDGC">&nbsp;</td>
+                <td id="T1015b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1015a" class="CHEDGC">&nbsp;</td>
+                <td id="W1015b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1015a" class="CHEDGC">&nbsp;</td>
+                <td id="H1015b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1015a" class="CHEDGC">&nbsp;</td>
+                <td id="F1015b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1030">
+                <!-- Column Spanned from Above -->
+                <td id="M1030a" class="CHEDGC">&nbsp;</td>
+                <td id="M1030b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1030a" class="CHEDGC">&nbsp;</td>
+                <td id="T1030b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1030a" class="CHEDGC">&nbsp;</td>
+                <td id="W1030b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1030a" class="CHEDGC">&nbsp;</td>
+                <td id="H1030b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1030a" class="CHEDGC">&nbsp;</td>
+                <td id="F1030b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1045">
+                <!-- Column Spanned from Above -->
+                <td id="M1045a" class="CHEDGCB">&nbsp;</td>
+                <td id="M1045b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="T1045a" class="CHEDGCB">&nbsp;</td>
+                <td id="T1045b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="W1045a" class="CHEDGCB">&nbsp;</td>
+                <td id="W1045b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="H1045a" class="CHEDGCB">&nbsp;</td>
+                <td id="H1045b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="F1045a" class="CHEDGCB">&nbsp;</td>
+                <td id="F1045b" class="CHEDGCRB">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1100">
+                <td id="gc11" class="CHEDLEFT" rowspan="4">
+                    11:00 AM
+                </td>
+                <td id="M1100a" class="CHEDGC">&nbsp;</td>
+                <td id="M1100b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1100a" class="CHEDGC">&nbsp;</td>
+                <td id="T1100b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1100a" class="CHEDGC">&nbsp;</td>
+                <td id="W1100b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1100a" class="CHEDGC">&nbsp;</td>
+                <td id="H1100b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1100a" class="CHEDGC">&nbsp;</td>
+                <td id="F1100b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1115">
+                <!-- Column Spanned from Above -->
+                <td id="M1115a" class="CHEDGC">&nbsp;</td>
+                <td id="M1115b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1115a" class="CHEDGC">&nbsp;</td>
+                <td id="T1115b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1115a" class="CHEDGC">&nbsp;</td>
+                <td id="W1115b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1115a" class="CHEDGC">&nbsp;</td>
+                <td id="H1115b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1115a" class="CHEDGC">&nbsp;</td>
+                <td id="F1115b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1130">
+                <!-- Column Spanned from Above -->
+                <td id="M1130a" class="CHEDGC">&nbsp;</td>
+                <td id="M1130b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1130a" class="CHEDGC">&nbsp;</td>
+                <td id="T1130b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1130a" class="CHEDGC">&nbsp;</td>
+                <td id="W1130b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1130a" class="CHEDGC">&nbsp;</td>
+                <td id="H1130b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1130a" class="CHEDGC">&nbsp;</td>
+                <td id="F1130b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1145">
+                <!-- Column Spanned from Above -->
+                <td id="M1145a" class="CHEDGCB">&nbsp;</td>
+                <td id="M1145b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="T1145a" class="CHEDGC">&nbsp;</td>
+                <td id="T1145b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1145a" class="CHEDGCB">&nbsp;</td>
+                <td id="W1145b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="H1145a" class="CHEDGC">&nbsp;</td>
+                <td id="H1145b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1145a" class="CHEDGCB">&nbsp;</td>
+                <td id="F1145b" class="CHEDGCRB">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1200">
+                <td id="gc12" class="CHEDLEFT" rowspan="4">
+                    12:00 PM
+                </td>
+                <td id="M1200a" class="CHEDGC">&nbsp;</td>
+                <td id="M1200b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1200a" class="CHEDGC">&nbsp;</td>
+                <td id="T1200b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1200a" class="CHEDGC">&nbsp;</td>
+                <td id="W1200b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1200a" class="CHEDGC">&nbsp;</td>
+                <td id="H1200b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1200a" class="CHEDGC">&nbsp;</td>
+                <td id="F1200b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1215">
+                <!-- Column Spanned from Above -->
+                <td id="M1215a" class="CHEDGC">&nbsp;</td>
+                <td id="M1215b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1215a" class="CHEDGCB">&nbsp;</td>
+                <td id="T1215b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="W1215a" class="CHEDGC">&nbsp;</td>
+                <td id="W1215b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1215a" class="CHEDGCB">&nbsp;</td>
+                <td id="H1215b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="F1215a" class="CHEDGC">&nbsp;</td>
+                <td id="F1215b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1230">
+                <!-- Column Spanned from Above -->
+                <td id="M1230a" class="CHEDGC">&nbsp;</td>
+                <td id="M1230b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1230a" class="CHEDGC">&nbsp;</td>
+                <td id="T1230b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1230a" class="CHEDGC">&nbsp;</td>
+                <td id="W1230b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1230a" class="CHEDGC">&nbsp;</td>
+                <td id="H1230b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1230a" class="CHEDGC">&nbsp;</td>
+                <td id="F1230b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1245">
+                <!-- Column Spanned from Above -->
+                <td id="M1245a" class="CHEDGCB">&nbsp;</td>
+                <td id="M1245b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="T1245a" class="CHEDGC">&nbsp;</td>
+                <td id="T1245b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1245a" class="CHEDGCB">&nbsp;</td>
+                <td id="W1245b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="H1245a" class="CHEDGC">&nbsp;</td>
+                <td id="H1245b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1245a" class="CHEDGCB">&nbsp;</td>
+                <td id="F1245b" class="CHEDGCRB">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1300">
+                <td id="gc13" class="CHEDLEFT" rowspan="4">
+                    1:00 PM
+                </td>
+                <td id="M1300a" class="CHEDGC">&nbsp;</td>
+                <td id="M1300b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1300a" class="CHEDGC">&nbsp;</td>
+                <td id="T1300b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1300a" class="CHEDGC">&nbsp;</td>
+                <td id="W1300b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1300a" class="CHEDGC">&nbsp;</td>
+                <td id="H1300b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1300a" class="CHEDGC">&nbsp;</td>
+                <td id="F1300b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1315">
+                <!-- Column Spanned from Above -->
+                <td id="M1315a" class="CHEDGC">&nbsp;</td>
+                <td id="M1315b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1315a" class="CHEDGC">&nbsp;</td>
+                <td id="T1315b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1315a" class="CHEDGC">&nbsp;</td>
+                <td id="W1315b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1315a" class="CHEDGC">&nbsp;</td>
+                <td id="H1315b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1315a" class="CHEDGC">&nbsp;</td>
+                <td id="F1315b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1330">
+                <!-- Column Spanned from Above -->
+                <td id="M1330a" class="CHEDGC">&nbsp;</td>
+                <td id="M1330b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1330a" class="CHEDGC">&nbsp;</td>
+                <td id="T1330b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1330a" class="CHEDGC">&nbsp;</td>
+                <td id="W1330b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1330a" class="CHEDGC">&nbsp;</td>
+                <td id="H1330b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1330a" class="CHEDGC">&nbsp;</td>
+                <td id="F1330b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1345">
+                <!-- Column Spanned from Above -->
+                <td id="M1345a" class="CHEDGCB">&nbsp;</td>
+                <td id="M1345b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="T1345a" class="CHEDGCB">&nbsp;</td>
+                <td id="T1345b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="W1345a" class="CHEDGCB">&nbsp;</td>
+                <td id="W1345b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="H1345a" class="CHEDGCB">&nbsp;</td>
+                <td id="H1345b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="F1345a" class="CHEDGCB">&nbsp;</td>
+                <td id="F1345b" class="CHEDGCRB">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1400">
+                <td id="gc14" class="CHEDLEFT" rowspan="4">
+                    2:00 PM
+                </td>
+                <td id="M1400a" class="CHEDGC">&nbsp;</td>
+                <td id="M1400b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1400a" class="CHEDGC">&nbsp;</td>
+                <td id="T1400b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1400a" class="CHEDGC">&nbsp;</td>
+                <td id="W1400b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1400a" class="CHEDGC">&nbsp;</td>
+                <td id="H1400b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1400a" class="CHEDGC">&nbsp;</td>
+                <td id="F1400b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1415">
+                <!-- Column Spanned from Above -->
+                <td id="M1415a" class="CHEDGC">&nbsp;</td>
+                <td id="M1415b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1415a" class="CHEDGC">&nbsp;</td>
+                <td id="T1415b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1415a" class="CHEDGC">&nbsp;</td>
+                <td id="W1415b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1415a" class="CHEDGC">&nbsp;</td>
+                <td id="H1415b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1415a" class="CHEDGC">&nbsp;</td>
+                <td id="F1415b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1430">
+                <!-- Column Spanned from Above -->
+                <td id="M1430a" class="CHEDGC">&nbsp;</td>
+                <td id="M1430b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1430a" class="CHEDGC">&nbsp;</td>
+                <td id="T1430b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1430a" class="CHEDGC">&nbsp;</td>
+                <td id="W1430b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1430a" class="CHEDGC">&nbsp;</td>
+                <td id="H1430b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1430a" class="CHEDGC">&nbsp;</td>
+                <td id="F1430b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1445">
+                <!-- Column Spanned from Above -->
+                <td id="M1445a" class="CHEDGCB">&nbsp;</td>
+                <td id="M1445b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="T1445a" class="CHEDGC">&nbsp;</td>
+                <td id="T1445b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1445a" class="CHEDGCB">&nbsp;</td>
+                <td id="W1445b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="H1445a" class="CHEDGC">&nbsp;</td>
+                <td id="H1445b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1445a" class="CHEDGCB">&nbsp;</td>
+                <td id="F1445b" class="CHEDGCRB">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1500">
+                <td id="gc15" class="CHEDLEFT" rowspan="4">
+                    3:00 PM
+                </td>
+                <td id="M1500a" class="CHEDGC">&nbsp;</td>
+                <td id="M1500b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1500a" class="CHEDGC">&nbsp;</td>
+                <td id="T1500b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1500a" class="CHEDGC">&nbsp;</td>
+                <td id="W1500b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1500a" class="CHEDGC">&nbsp;</td>
+                <td id="H1500b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1500a" class="CHEDGC">&nbsp;</td>
+                <td id="F1500b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1515">
+                <!-- Column Spanned from Above -->
+                <td id="M1515a" class="CHEDGC">&nbsp;</td>
+                <td id="M1515b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1515a" class="CHEDGCB">&nbsp;</td>
+                <td id="T1515b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="W1515a" class="CHEDGC">&nbsp;</td>
+                <td id="W1515b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1515a" class="CHEDGCB">&nbsp;</td>
+                <td id="H1515b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="F1515a" class="CHEDGC">&nbsp;</td>
+                <td id="F1515b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1530">
+                <!-- Column Spanned from Above -->
+                <td id="M1530a" class="CHEDGC">&nbsp;</td>
+                <td id="M1530b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1530a" class="CHEDGC">&nbsp;</td>
+                <td id="T1530b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1530a" class="CHEDGC">&nbsp;</td>
+                <td id="W1530b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1530a" class="CHEDGC">&nbsp;</td>
+                <td id="H1530b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1530a" class="CHEDGC">&nbsp;</td>
+                <td id="F1530b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1545">
+                <!-- Column Spanned from Above -->
+                <td id="M1545a" class="CHEDGCB">&nbsp;</td>
+                <td id="M1545b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="T1545a" class="CHEDGC">&nbsp;</td>
+                <td id="T1545b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1545a" class="CHEDGCB">&nbsp;</td>
+                <td id="W1545b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="H1545a" class="CHEDGC">&nbsp;</td>
+                <td id="H1545b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1545a" class="CHEDGCB">&nbsp;</td>
+                <td id="F1545b" class="CHEDGCRB">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1600">
+                <td id="gc16" class="CHEDLEFT" rowspan="4">
+                    4:00 PM
+                </td>
+                <td id="M1600a" class="CHEDGC">&nbsp;</td>
+                <td id="M1600b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1600a" class="CHEDGC">&nbsp;</td>
+                <td id="T1600b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1600a" class="CHEDGC">&nbsp;</td>
+                <td id="W1600b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1600a" class="CHEDGC">&nbsp;</td>
+                <td id="H1600b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1600a" class="CHEDGC">&nbsp;</td>
+                <td id="F1600b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1615">
+                <!-- Column Spanned from Above -->
+                <td id="M1615a" class="CHEDGC">&nbsp;</td>
+                <td id="M1615b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1615a" class="CHEDGC">&nbsp;</td>
+                <td id="T1615b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1615a" class="CHEDGC">&nbsp;</td>
+                <td id="W1615b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1615a" class="CHEDGC">&nbsp;</td>
+                <td id="H1615b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1615a" class="CHEDGC">&nbsp;</td>
+                <td id="F1615b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1630">
+                <!-- Column Spanned from Above -->
+                <td id="M1630a" class="CHEDGC">&nbsp;</td>
+                <td id="M1630b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="T1630a" class="CHEDGC">&nbsp;</td>
+                <td id="T1630b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="W1630a" class="CHEDGC">&nbsp;</td>
+                <td id="W1630b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="H1630a" class="CHEDGC">&nbsp;</td>
+                <td id="H1630b" class="CHEDGCR">&nbsp;</td>
+
+                <td id="F1630a" class="CHEDGC">&nbsp;</td>
+                <td id="F1630b" class="CHEDGCR">&nbsp;</td>
+
+            </tr>
+            <tr id="gr1645">
+                <!-- Column Spanned from Above -->
+                <td id="M1645a" class="CHEDGCB">&nbsp;</td>
+                <td id="M1645b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="T1645a" class="CHEDGCB">&nbsp;</td>
+                <td id="T1645b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="W1645a" class="CHEDGCB">&nbsp;</td>
+                <td id="W1645b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="H1645a" class="CHEDGCB">&nbsp;</td>
+                <td id="H1645b" class="CHEDGCRB">&nbsp;</td>
+
+                <td id="F1645a" class="CHEDGCB">&nbsp;</td>
+                <td id="F1645b" class="CHEDGCRB">&nbsp;</td>
+
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
