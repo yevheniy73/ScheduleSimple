@@ -2,6 +2,10 @@ td {
     height: 10px;
 }
 
+.HIDE_ME {
+    display: none;
+}
+
 .CHEDLEFT {
     font-family: Verdana, Arial, sans-serif;
     font-size: 12px;
