@@ -618,9 +618,7 @@ td {
     color: #000;
 }
 
-
-
-.ZSSCLSSCHEDLEFT{font-family:Verdana,Arial,sans-serif;font-size:12px;font-weight:normal;color:rgb(0,0,0);vertical-align:middle;text-align:center;border-bottom-width:1px;border-left-width:1px;border-right-width:2px;border-bottom-color:rgb(0,0,0);border-left-color:rgb(0,0,0);border-right-color:rgb(0,0,0);border-bottom-style:solid;border-left-style:solid;border-right-style:solid;width:70px;height:40px;}
+/* .ZSSCLSSCHEDLEFT{font-family:Verdana,Arial,sans-serif;font-size:12px;font-weight:normal;color:rgb(0,0,0);vertical-align:middle;text-align:center;border-bottom-width:1px;border-left-width:1px;border-right-width:2px;border-bottom-color:rgb(0,0,0);border-left-color:rgb(0,0,0);border-right-color:rgb(0,0,0);border-bottom-style:solid;border-left-style:solid;border-right-style:solid;width:70px;height:40px;}
 .ZSSCLSGRIDTBL{background-color:rgb(255,255,255);}
 .ZSSCLSLSTHDR{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:bold;font-style:normal;color:rgb(0,0,0);vertical-align:top;text-align:center;}
 .ZSSCLASSLISTDTLHDR{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:bold;vertical-align:bottom;text-align:center;padding-bottom:2px;padding-left:1px;padding-right:1px;}
@@ -640,7 +638,7 @@ td {
 .ZSSCLSSCHEDGCR,.ZSSCLSSCHEDGCRT{font-family:Verdana,Arial,sans-serif;font-size:1px;font-weight:normal;color:rgb(0,0,0);vertical-align:top;text-align:left;border-right-width:1px;border-right-color:rgb(0,0,0);border-right-style:solid;width:50px;height:10px;}
 .ZSSCLSSCHEDGC{font-family:Verdana,Arial,sans-serif;font-size:1px;font-weight:normal;color:rgb(0,0,0);vertical-align:top;text-align:left;width:50px;height:10px;}
 .ZSSCLSSCHEDLEGEND{font-family:Verdana,Arial,sans-serif;font-size:6px;font-weight:normal;border-width:1px;border-color:rgb(0,0,0);border-style:solid;width:10px;height:11px;}
-.ZSSCLSLISTTBL{font-family:Verdana,Arial,sans-serif;font-size:9px;font-weight:normal;font-style:normal;color:rgb(0,0,0);width:650px;}
+.ZSSCLSLISTTBL{font-family:Verdana,Arial,sans-serif;font-size:9px;font-weight:normal;font-style:normal;color:rgb(0,0,0);width:650px;} 
 
 .ZSS_PTNAVSELCHILDEDGELT,.ZSS_PTNAVSELPARENTBK{background-image:url(/bt_images/ZSS_nav_child_background.gif);background-repeat:repeat-y;}
 .ZSS_PTNAVBACKGROUND_BOTTOM{background-image:url(/bt_images/ZSS_nav_divider.gif);background-repeat:no-repeat;height:1px;}
@@ -672,4 +670,4 @@ td {
 .ZSS_ACAD_HEADER{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:normal;font-style:normal;color:rgb(0,67,27);}
 .ZSS_FEE_DETAIL{font-family:Verdana,Arial,sans-serif;font-size:11px;font-weight:bold;font-style:normal;color:rgb(0,0,0);}
 
-.ZSS_VARIABLE_MSG{font-family:Arial,Helvetica,sans-serif;font-size:14.667px;font-weight:normal;font-style:normal;color:#000;}
+.ZSS_VARIABLE_MSG{font-family:Arial,Helvetica,sans-serif;font-size:14.667px;font-weight:normal;font-style:normal;color:#000;}  */

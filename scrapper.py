@@ -1,6 +1,3 @@
-from calendar import day_name
-from ntpath import join
-from operator import indexOf
 from bs4 import BeautifulSoup
 import requests
 import sqlite3
@@ -8,7 +5,7 @@ import numpy as np
 import os
 
 has_conflict = False
-course_colors = ["#ff9999", "#99FF99", "#ff99cc", "#FFFF99", "#99CCFF", "#CC99FF"]
+course_colors = ["#ff9999", "#99FF99", "#ff99cc", "#FFFF99", "#99CCFF", "#CC99FF", "#CC9999", "#CCFF99", "#ffcc99"]
 day_letters = ["M", "T", "W", "H", "F"]
 
 schedule_monday = []
@@ -20,7 +17,7 @@ schedule = [schedule_monday, schedule_tuesday, schedule_wednesday, schedule_thur
 
 ##########################################################################################################################
 
-courses_requested = [('cmput', '466'), ('cmput', '365'), ('cmput', '291'), ('cmput', '340'), ('cmput', '256'), ('cmput', '325'), ('cmput', '379'), ('cmput', '404')]
+courses_requested = [('phil', '120'), ('cmput', '466'), ('cmput', '365'), ('cmput', '291'), ('cmput', '340'), ('cmput', '256'), ('cmput', '325'), ('cmput', '379'), ('cmput', '404'), ('engl', '103'), ('engl', '103')]
 
 ##########################################################################################################################
 
@@ -133,7 +130,7 @@ for day in schedule:
         sched_block_b['class'] = sched_block.get('class', []) + ['HIDE_ME']
 
         sched_block.string = f"{course[0]} LEC {course[3]}"
-        sched_block['class'] = "ZSSCLSSCHEDSTDCLS"
+        sched_block['class'] = "CHEDSTD"
         sched_block['height'] = time_difference
         sched_block['width'] = "100"
         sched_block['rowspan'] = (time_difference / 15)
