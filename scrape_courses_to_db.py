@@ -26,12 +26,12 @@ def scrape_to_db(courses_requested):
         for date in datesTimes:
 
             text = "  ".join(date.parent.text.split())
-            textArr = text.split()
-            textArr[:] = (value for value in textArr if value != '-')
-            textArr[:] = (value for value in textArr if value != 'ONLINE')
+            db_entry = text.split()
+            db_entry[:] = (value for value in db_entry if value != '-')
+            db_entry[:] = (value for value in db_entry if value != 'ONLINE')
 
-            record = (f'{course[0].upper()} {course[1]}', textArr[0], textArr[1], textArr[2].strip("()"), textArr[3],
-                        textArr[4], textArr[5], textArr[6], textArr[7], textArr[8], str(textArr[9] + " " + textArr[10]).strip("()"))
+            record = (f'{course[0].upper()} {course[1]}', db_entry[0], db_entry[1], db_entry[2].strip("()"), db_entry[3],
+                        db_entry[4], db_entry[5], db_entry[6], db_entry[7], db_entry[8], str(db_entry[9] + " " + db_entry[10]).strip("()"))
             cur.execute(mySql_insert_query, record)
 
     con.commit()

@@ -6,12 +6,30 @@ day_letters = ["M", "T", "W", "H", "F"]
 
 #=========================================================================================================================
 
+def add_course_to_table(sched_block, course, course_names_selected, time_difference):
+    sched_block.string = f"{course[0]} LEC {course[3]}"
+    sched_block['class'] = "CHEDSTD"
+    sched_block['height'] = time_difference
+    sched_block['width'] = "100"
+    sched_block['rowspan'] = (time_difference / 15)
+    sched_block['colspan'] = "2"
+    sched_block['bgcolor'] = course_colors[course_names_selected.index(course[0])]
+    sched_block['onClick'] = f'window.open("https://apps.ualberta.ca/catalogue/course/{course[0].split()[0]}/{course[0].split()[1]}")'
+    return None
+
+#=========================================================================================================================
+
+def hide_block(html_sched_text, day_name, sched_hour, sched_minute, AB):
+    sched_block = html_sched_text.find("td", {"id": f"{day_name}{sched_hour}{sched_minute}{AB}"})
+    sched_block['class'] = sched_block.get('class', []) + ['HIDE_ME']
+
+#=========================================================================================================================
+
 def build_time_table(schedule, course_names_selected):
     base = os.path.dirname(os.path.abspath(__file__))
 
     html_sched =open(os.path.join(base, 'SampleTemplate.html'))
     html_sched_text = BeautifulSoup(html_sched, 'lxml')
-
 
     day_name_pointer = 0
 
@@ -29,16 +47,9 @@ def build_time_table(schedule, course_names_selected):
             time_difference = time_difference_hours * 60 + time_difference_mins
 
             sched_block = html_sched_text.find("td", {"id": f"{day_name}{course_start_time}a"})
-            sched_block_b = html_sched_text.find("td", {"id": f"{day_name}{course_start_time}b"})
-            sched_block_b['class'] = sched_block.get('class', []) + ['HIDE_ME']
+            add_course_to_table(sched_block, course, course_names_selected, time_difference)
 
-            sched_block.string = f"{course[0]} LEC {course[3]}"
-            sched_block['class'] = "CHEDSTD"
-            sched_block['height'] = time_difference
-            sched_block['width'] = "100"
-            sched_block['rowspan'] = (time_difference / 15)
-            sched_block['colspan'] = "2"
-            sched_block['bgcolor'] = course_colors[course_names_selected.index(course[0])]
+            hide_block(html_sched_text, day_name, course_start_time[:2], course_start_time[-2:], "b")
 
             sched_pointer = 15
 
@@ -49,13 +60,10 @@ def build_time_table(schedule, course_names_selected):
                 extra_hour, extra_minute = divmod(sched_minute, 60)
 
                 sched_hour = str(int(course_start_time[:2]) + extra_hour).zfill(2)
-                extra_minute = str(extra_minute).zfill(2)
+                sched_minute = str(extra_minute).zfill(2)
 
-                sched_block = html_sched_text.find("td", {"id": f"{day_name}{sched_hour}{extra_minute}a"})
-                sched_block['class'] = sched_block.get('class', []) + ['HIDE_ME']
-
-                sched_block = html_sched_text.find("td", {"id": f"{day_name}{str(sched_hour).zfill(2)}{str(extra_minute).zfill(2)}b"})
-                sched_block['class'] = sched_block.get('class', []) + ['HIDE_ME']
+                hide_block(html_sched_text, day_name, sched_hour, sched_minute, "a")
+                hide_block(html_sched_text, day_name, sched_hour, sched_minute, "b")
 
                 sched_pointer += 15
 
@@ -64,10 +72,3 @@ def build_time_table(schedule, course_names_selected):
     return None
 
 #=========================================================================================================================
-
-# print out the schedule at the end
-# for i in range(len(schedule)):
-#     print(day_letters[i])
-#     for j in range(len(schedule[i])):
-#         print(schedule[i][j])
-#     print("")

@@ -1,3 +1,11 @@
+* {
+    font-weight: normal;
+}
+
+table {
+    margin: 5% auto;
+}
+
 td {
     height: 10px;
 }
@@ -9,7 +17,6 @@ td {
 .CHEDLEFT {
     font-family: Verdana, Arial, sans-serif;
     font-size: 12px;
-    font-weight: normal;
     color: rgb(0, 0, 0);
     vertical-align: middle;
     text-align: center;
@@ -27,109 +34,25 @@ td {
 }
 
 .GRID_TABLE {
-    background-color: rgb(255, 255, 255);
-}
-
-.LSTHDR {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    font-style: normal;
-    color: rgb(0, 0, 0);
-    vertical-align: top;
-    text-align: center;
-}
-
-.CLASSLISTDTLHDR {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    vertical-align: bottom;
-    text-align: center;
-    padding-bottom: 2px;
-    padding-left: 1px;
-    padding-right: 1px;
-}
-
-.CLASSLISTWEBSITE {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    vertical-align: text-top;
-    text-align: right;
-    padding-top: 2px;
-}
-
-.LSTDTL {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: normal;
-    color: rgb(0, 0, 0);
-    vertical-align: top;
-    text-align: center;
-}
-
-.CLASSLISTDTLWRAP {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: normal;
-    vertical-align: text-top;
-    text-align: center;
-    padding-bottom: 1px;
-    padding-left: 2px;
-    padding-right: 2px;
-    white-space: normal;
-}
-
-.CLASSLISTDTL {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: normal;
-    vertical-align: text-top;
-    text-align: center;
-    padding-bottom: 1px;
-    padding-left: 2px;
-    padding-right: 2px;
-    white-space: nowrap;
-}
-
-.CLASSLISTWEBSITELINK {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: normal;
-    vertical-align: text-top;
-    text-align: left;
+    background-color: #f5f5f5;
 }
 
 .CHEDSTD,
 .CHEDSTDT {
     font-family: Verdana, Arial, sans-serif;
     font-size: 10px;
-    font-weight: normal;
     vertical-align: top;
     text-align: left;
     border-width: 1px;
     border-color: rgb(0, 0, 0);
     border-style: solid;
+    cursor: pointer;
 }
 
-.CLASSLISTHDR {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 11px;
-    font-weight: normal;
-    vertical-align: text-top;
-    text-align: left;
-    padding-left: 2px;
-}
-
-.CLASSLISTHDRSTATUS {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 11px;
-    font-weight: normal;
-    vertical-align: text-top;
-    text-align: right;
-    padding-right: 2px;
-    white-space: nowrap;
+.CHEDSTD:hover,
+.CHEDSTDT:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s;
 }
 
 .CHEDHDRTY {
@@ -153,7 +76,6 @@ td {
 .SCHEDULE_DAY_NAMET {
     font-family: Verdana, Arial, sans-serif;
     font-size: 12px;
-    font-weight: normal;
     color: rgb(0, 0, 0);
     vertical-align: middle;
     text-align: center;
@@ -170,25 +92,10 @@ td {
     height: 40px;
 }
 
-.CHEDCONFLICT,
-.CHEDCONFLICTB,
-.CHEDCONFLICTBT,
-.CHEDCONFLICTT {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 1px;
-    font-weight: normal;
-    color: rgb(0, 0, 0);
-    background-image: url(/bt_images/_class_conflict_bk.gif);
-    vertical-align: top;
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-}
 
 .CHEDGCB {
     font-family: Verdana, Arial, sans-serif;
     font-size: 1px;
-    font-weight: normal;
     color: rgb(0, 0, 0);
     vertical-align: top;
     text-align: left;
@@ -203,7 +110,6 @@ td {
 .CHEDGCRBT {
     font-family: Verdana, Arial, sans-serif;
     font-size: 1px;
-    font-weight: normal;
     color: rgb(0, 0, 0);
     vertical-align: top;
     text-align: left;
@@ -221,7 +127,6 @@ td {
 .CHEDGCRT {
     font-family: Verdana, Arial, sans-serif;
     font-size: 1px;
-    font-weight: normal;
     color: rgb(0, 0, 0);
     vertical-align: top;
     text-align: left;
@@ -234,440 +139,10 @@ td {
 
 .CHEDGC {
     font-family: Verdana, Arial, sans-serif;
-    font-size: 1px;
-    font-weight: normal;
+    font-size: 1px; 
     color: rgb(0, 0, 0);
     vertical-align: top;
     text-align: left;
     width: 50px;
     height: 10px;
 }
-
-.CHEDLEGEND {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 6px;
-    font-weight: normal;
-    border-width: 1px;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    width: 10px;
-    height: 11px;
-}
-
-.LISTTBL {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 9px;
-    font-weight: normal;
-    font-style: normal;
-    color: rgb(0, 0, 0);
-    width: 650px;
-}
-
-._PTNAVSELCHILDEDGELT,
-._PTNAVSELPARENTBK {
-    background-image: url(/bt_images/_nav_child_background.gif);
-    background-repeat: repeat-y;
-}
-
-._PTNAVBACKGROUND_BOTTOM {
-    background-image: url(/bt_images/_nav_divider.gif);
-    background-repeat: no-repeat;
-    height: 1px;
-}
-
-._PTNAVSELPARENTEDGE {
-    background-image: url(/bt_images/_nav_divider.gif);
-    background-repeat: repeat-y;
-    height: 1px;
-}
-
-._PTNAVBACKGROUND,
-._PTNAVSELCHILDEDGEDK,
-._PTNAVSELFOLDERBK {
-    background-image: url(/bt_images/_nav_parent_background.jpg);
-    background-repeat: repeat-y;
-}
-
-._PTPAGELET {
-    border-width: 0px;
-    border-top-style: none;
-    border-bottom-style: none;
-    border-left-style: none;
-    border-right-style: none;
-}
-
-._PTNAVSELCHILDBK {
-    color: rgb(255, 255, 255);
-    background-color: rgb(74, 113, 173);
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-top-color: rgb(40, 66, 119);
-    border-bottom-color: rgb(40, 66, 119);
-    border-top-style: solid;
-    border-bottom-style: solid;
-}
-
-._PTNAVSELCHILDLINK {
-    font-family: Arial, Helvetica;
-    font-size: 9pt;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-._RIGHT_FOOTTXT {
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-    color: rgb(0, 0, 0);
-    word-spacing: normal;
-    letter-spacing: normal;
-    text-align: right;
-    line-height: normal;
-}
-
-._SSSBUTTON_CONFIRMLIN {
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-variant: small-caps;
-    color: rgb(0, 67, 27);
-    background-color: rgb(255, 229, 151);
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: capitalize;
-    text-align: center;
-    line-height: 20px;
-    border-width: 1px;
-    border-top-color: rgb(142, 203, 98);
-    border-bottom-color: rgb(114, 175, 69);
-    border-left-color: rgb(142, 203, 98);
-    border-right-color: rgb(114, 175, 69);
-    border-top-style: none;
-    border-bottom-style: solid;
-    border-left-style: none;
-    border-right-style: solid;
-    height: 20px;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-._PAPAGETITLE {
-    font-family: Arial, sans-serif;
-    font-size: 14pt;
-    font-weight: bold;
-    font-style: normal;
-    font-variant: normal;
-    color: rgb(0, 102, 51);
-    word-spacing: normal;
-    letter-spacing: normal;
-    line-height: normal;
-}
-
-._EDITBOX_SMALL {
-    font-family: Arial, sans-serif;
-    font-size: 5pt;
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-    color: rgb(0, 0, 0);
-    word-spacing: normal;
-    letter-spacing: normal;
-    line-height: normal;
-}
-
-._EDITBOX_BOLD_ITALIC {
-    font-family: Arial, sans-serif;
-    font-size: 9pt;
-    font-weight: bold;
-    font-style: italic;
-    font-variant: normal;
-    color: rgb(0, 0, 0);
-    word-spacing: normal;
-    letter-spacing: normal;
-    line-height: normal;
-}
-
-._REVERSE_BOLD {
-    font-family: Arial, sans-serif;
-    font-size: 9pt;
-    font-weight: bold;
-    font-style: normal;
-    font-variant: normal;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    word-spacing: normal;
-    letter-spacing: normal;
-    text-align: center;
-    line-height: normal;
-}
-
-._EDITBOX_ITALIC {
-    font-family: Arial, sans-serif;
-    font-size: 9pt;
-    font-weight: normal;
-    font-style: italic;
-    font-variant: normal;
-    color: rgb(0, 0, 0);
-    word-spacing: normal;
-    letter-spacing: normal;
-    line-height: normal;
-}
-
-._PUSHBUTTONDISABLED,
-._GOLD_PUSHBUTTONDISABLED,
-._GREEN_PUSHBUTTONDISABLED {
-    font-family: Arial, sans-serif;
-    font-size: 9pt;
-    font-weight: normal;
-    font-style: normal;
-    color: rgb(169, 169, 169);
-    background-color: rgb(204, 204, 204);
-}
-
-._DISABLED,
-._EDITBOX_BOLD_ITALICDISABLED,
-._EDITBOX_ITALICDISABLED,
-._EDITBOX_SMALLDISABLED,
-._RIGHT_FOOTTXTDISABLED {
-    font-family: Arial, sans-serif;
-    font-size: 9pt;
-    font-weight: normal;
-    font-style: normal;
-    color: rgb(192, 192, 192);
-}
-
-._GOLD_PUSHBUTTON {
-    font-family: Arial, sans-serif;
-    font-size: 9pt;
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 204, 0);
-}
-
-._GREEN_PUSHBUTTON {
-    font-family: Arial, sans-serif;
-    font-size: 9pt;
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 102, 51);
-}
-
-._BOLDTEXTRED {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    font-variant: normal;
-    color: rgb(255, 0, 0);
-}
-
-._PTNAVLINK_HOVER,
-._PTNAVLINK:HOVER {
-    font-family: Verdana, Arial, Helvetica;
-    font-size: 11px;
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-    line-height: 18px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 5px;
-}
-
-._PTNAVLINK {
-    font-family: Verdana, Arial, Helvetica;
-    font-size: 11px;
-    color: rgb(77, 77, 77);
-    text-decoration: none;
-    line-height: 18px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 5px;
-}
-
-._PSNAVPARENTLINKSEC {
-    font-family: Verdana, Arial, Helvetica;
-    font-size: 11px;
-    font-weight: bold;
-    color: rgb(77, 77, 77);
-    text-decoration: none;
-    line-height: 18px;
-}
-
-._PSNAVPARENTLINK_HOVER,
-._PSNAVPARENTLINK:HOVER {
-    font-family: Verdana, Arial, Helvetica;
-    font-size: 12px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-    line-height: 32px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 10px;
-    height: 32px;
-}
-
-._PSNAVPARENTLINK,
-._PTNAVSELPARENTLINK {
-    font-family: Verdana, Arial, Helvetica;
-    font-size: 12px;
-    font-weight: bold;
-    color: rgb(77, 77, 77);
-    text-decoration: none;
-    line-height: 32px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 10px;
-    height: 32px;
-}
-
-._SSSBUTTON_ACTIONLINK {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    font-style: normal;
-    color: rgb(0, 67, 27);
-    background-color: rgb(255, 229, 151);
-    text-decoration: none;
-    text-transform: lowercase;
-    text-align: center;
-    line-height: 16px;
-    padding-left: 2px;
-    border-width: 1px;
-    border-top-color: rgb(142, 203, 98);
-    border-bottom-color: rgb(95, 154, 35);
-    border-left-color: rgb(142, 203, 98);
-    border-right-color: rgb(95, 154, 35);
-    border-top-style: none;
-    border-bottom-style: solid;
-    border-left-style: none;
-    border-right-style: solid;
-    height: 16px;
-    display: block;
-    white-space: nowrap;
-    cursor: hand;
-}
-
-._BUTTON_ACTIONLINK {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    font-style: normal;
-    color: rgb(64, 111, 53);
-    background-color: rgb(222, 235, 181);
-    text-decoration: none;
-    text-transform: none;
-    text-align: center;
-    line-height: 16px;
-    padding-left: 2px;
-    border-width: 1px;
-    border-top-color: rgb(142, 203, 98);
-    border-bottom-color: rgb(95, 154, 35);
-    border-left-color: rgb(142, 203, 98);
-    border-right-color: rgb(95, 154, 35);
-    border-top-style: none;
-    border-bottom-style: solid;
-    border-left-style: none;
-    border-right-style: solid;
-    height: 16px;
-    display: block;
-    white-space: nowrap;
-    cursor: hand;
-}
-
-._GRIDTEXTCENTER {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: normal;
-    font-style: normal;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    display: block;
-    white-space: nowrap;
-}
-
-._ACAD_HEADER {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 10px;
-    font-weight: normal;
-    font-style: normal;
-    color: rgb(0, 67, 27);
-}
-
-._FEE_DETAIL {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    font-style: normal;
-    color: rgb(0, 0, 0);
-}
-
-._VARIABLE_MSG {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14.667px;
-    font-weight: normal;
-    font-style: normal;
-    color: #000;
-}
-
-/* .ZSSCLSSCHEDLEFT{font-family:Verdana,Arial,sans-serif;font-size:12px;font-weight:normal;color:rgb(0,0,0);vertical-align:middle;text-align:center;border-bottom-width:1px;border-left-width:1px;border-right-width:2px;border-bottom-color:rgb(0,0,0);border-left-color:rgb(0,0,0);border-right-color:rgb(0,0,0);border-bottom-style:solid;border-left-style:solid;border-right-style:solid;width:70px;height:40px;}
-.ZSSCLSGRIDTBL{background-color:rgb(255,255,255);}
-.ZSSCLSLSTHDR{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:bold;font-style:normal;color:rgb(0,0,0);vertical-align:top;text-align:center;}
-.ZSSCLASSLISTDTLHDR{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:bold;vertical-align:bottom;text-align:center;padding-bottom:2px;padding-left:1px;padding-right:1px;}
-.ZSSCLASSLISTWEBSITE{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:bold;vertical-align:text-top;text-align:right;padding-top:2px;}
-.ZSSCLSLSTDTL{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:normal;color:rgb(0,0,0);vertical-align:top;text-align:center;}
-.ZSSCLASSLISTDTLWRAP{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:normal;vertical-align:text-top;text-align:center;padding-bottom:1px;padding-left:2px;padding-right:2px;white-space:normal;}
-.ZSSCLASSLISTDTL{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:normal;vertical-align:text-top;text-align:center;padding-bottom:1px;padding-left:2px;padding-right:2px;white-space:nowrap;}
-.ZSSCLASSLISTWEBSITELINK{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:normal;vertical-align:text-top;text-align:left;}
-.ZSSCLSSCHEDSTDCLS,.ZSSCLSSCHEDSTDCLST{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:normal;vertical-align:top;text-align:left;border-width:1px;border-color:rgb(0,0,0);border-style:solid;}
-.ZSSCLASSLISTHDR{font-family:Verdana,Arial,sans-serif;font-size:11px;font-weight:normal;vertical-align:text-top;text-align:left;padding-left:2px;}
-.ZSSCLASSLISTHDRSTATUS{font-family:Verdana,Arial,sans-serif;font-size:11px;font-weight:normal;vertical-align:text-top;text-align:right;padding-right:2px;white-space:nowrap;}
-.ZSSCLSSCHEDHDRTY{font-family:Verdana,Arial,sans-serif;font-size:12px;font-weight:bold;color:rgb(0,0,0);vertical-align:middle;text-align:center;border-top-width:1px;border-bottom-width:2px;border-left-width:1px;border-right-width:2px;border-color:rgb(0,0,0);border-style:solid;width:70px;height:40px;}
-.ZSSCLSSCHEDHDRDOW,.ZSSCLSSCHEDHDRDOWT{font-family:Verdana,Arial,sans-serif;font-size:12px;font-weight:normal;color:rgb(0,0,0);vertical-align:middle;text-align:center;border-top-width:1px;border-bottom-width:2px;border-right-width:1px;border-top-color:rgb(0,0,0);border-bottom-color:rgb(0,0,0);border-right-color:rgb(0,0,0);border-top-style:solid;border-bottom-style:solid;border-right-style:solid;width:100px;height:40px;}
-.ZSSCLSSCHEDCONFLICT,.ZSSCLSSCHEDCONFLICTB,.ZSSCLSSCHEDCONFLICTBT,.ZSSCLSSCHEDCONFLICTT{font-family:Verdana,Arial,sans-serif;font-size:1px;font-weight:normal;color:rgb(0,0,0);background-image:url(/bt_images/zss_class_conflict_bk.gif);vertical-align:top;border-width:1px;border-color:rgb(0,0,0);border-style:solid;}
-.ZSSCLSSCHEDGCB{font-family:Verdana,Arial,sans-serif;font-size:1px;font-weight:normal;color:rgb(0,0,0);vertical-align:top;text-align:left;border-bottom-width:1px;border-bottom-color:rgb(0,0,0);border-bottom-style:solid;width:50px;height:10px;}
-.ZSSCLSSCHEDGCRB,.ZSSCLSSCHEDGCRBT{font-family:Verdana,Arial,sans-serif;font-size:1px;font-weight:normal;color:rgb(0,0,0);vertical-align:top;text-align:left;border-bottom-width:1px;border-right-width:1px;border-bottom-color:rgb(0,0,0);border-right-color:rgb(0,0,0);border-bottom-style:solid;border-right-style:solid;width:50px;height:10px;}
-.ZSSCLSSCHEDGCR,.ZSSCLSSCHEDGCRT{font-family:Verdana,Arial,sans-serif;font-size:1px;font-weight:normal;color:rgb(0,0,0);vertical-align:top;text-align:left;border-right-width:1px;border-right-color:rgb(0,0,0);border-right-style:solid;width:50px;height:10px;}
-.ZSSCLSSCHEDGC{font-family:Verdana,Arial,sans-serif;font-size:1px;font-weight:normal;color:rgb(0,0,0);vertical-align:top;text-align:left;width:50px;height:10px;}
-.ZSSCLSSCHEDLEGEND{font-family:Verdana,Arial,sans-serif;font-size:6px;font-weight:normal;border-width:1px;border-color:rgb(0,0,0);border-style:solid;width:10px;height:11px;}
-.ZSSCLSLISTTBL{font-family:Verdana,Arial,sans-serif;font-size:9px;font-weight:normal;font-style:normal;color:rgb(0,0,0);width:650px;} 
-
-.ZSS_PTNAVSELCHILDEDGELT,.ZSS_PTNAVSELPARENTBK{background-image:url(/bt_images/ZSS_nav_child_background.gif);background-repeat:repeat-y;}
-.ZSS_PTNAVBACKGROUND_BOTTOM{background-image:url(/bt_images/ZSS_nav_divider.gif);background-repeat:no-repeat;height:1px;}
-.ZSS_PTNAVSELPARENTEDGE{background-image:url(/bt_images/ZSS_nav_divider.gif);background-repeat:repeat-y;height:1px;}
-.ZSS_PTNAVBACKGROUND,.ZSS_PTNAVSELCHILDEDGEDK,.ZSS_PTNAVSELFOLDERBK{background-image:url(/bt_images/ZSS_nav_parent_background.jpg);background-repeat:repeat-y;}
-.ZSS_PTPAGELET{border-width:0px;border-top-style:none;border-bottom-style:none;border-left-style:none;border-right-style:none;}
-.ZSS_PTNAVSELCHILDBK{color:rgb(255,255,255);background-color:rgb(74,113,173);border-top-width:1px;border-bottom-width:1px;border-top-color:rgb(40,66,119);border-bottom-color:rgb(40,66,119);border-top-style:solid;border-bottom-style:solid;}
-.ZSS_PTNAVSELCHILDLINK{font-family:Arial,Helvetica;font-size:9pt;color:rgb(255,255,255);text-decoration: none;}
-.ZSS_RIGHT_FOOTTXT{font-family:Arial,sans-serif;font-size:10px;font-weight:normal;font-style:normal;font-variant:normal;color:rgb(0,0,0);word-spacing:normal;letter-spacing:normal;text-align:right;line-height:normal;}
-.ZSS_SSSBUTTON_CONFIRMLIN{font-family:Arial,sans-serif;font-size:11px;font-weight:normal;font-style:normal;font-variant:small-caps;color:rgb(0,67,27);background-color:rgb(255,229,151);letter-spacing:1px;text-decoration: none;text-transform:capitalize;text-align:center;line-height:20px;border-width:1px;border-top-color:rgb(142,203,98);border-bottom-color:rgb(114,175,69);border-left-color:rgb(142,203,98);border-right-color:rgb(114,175,69);border-top-style:none;border-bottom-style:solid;border-left-style:none;border-right-style:solid;height:20px;white-space:nowrap;cursor:pointer;}
-.ZSS_PAPAGETITLE{font-family:Arial,sans-serif;font-size:14pt;font-weight:bold;font-style:normal;font-variant:normal;color:rgb(0,102,51);word-spacing:normal;letter-spacing:normal;line-height:normal;}
-.ZSS_EDITBOX_SMALL{font-family:Arial,sans-serif;font-size:5pt;font-weight:normal;font-style:normal;font-variant:normal;color:rgb(0,0,0);word-spacing:normal;letter-spacing:normal;line-height:normal;}
-.ZSS_EDITBOX_BOLD_ITALIC{font-family:Arial,sans-serif;font-size:9pt;font-weight:bold;font-style:italic;font-variant:normal;color:rgb(0,0,0);word-spacing:normal;letter-spacing:normal;line-height:normal;}
-.ZSS_REVERSE_BOLD{font-family:Arial,sans-serif;font-size:9pt;font-weight:bold;font-style:normal;font-variant:normal;color:rgb(255,255,255);background-color:rgb(0,0,0);word-spacing:normal;letter-spacing:normal;text-align:center;line-height:normal;}
-.ZSS_EDITBOX_ITALIC{font-family:Arial,sans-serif;font-size:9pt;font-weight:normal;font-style:italic;font-variant:normal;color:rgb(0,0,0);word-spacing:normal;letter-spacing:normal;line-height:normal;}
-.ZSS_PUSHBUTTONDISABLED,.ZSS_GOLD_PUSHBUTTONDISABLED,.ZSS_GREEN_PUSHBUTTONDISABLED{font-family:Arial,sans-serif;font-size:9pt;font-weight:normal;font-style:normal;color:rgb(169,169,169);background-color:rgb(204,204,204);}
-.ZSS_DISABLED,.ZSS_EDITBOX_BOLD_ITALICDISABLED,.ZSS_EDITBOX_ITALICDISABLED,.ZSS_EDITBOX_SMALLDISABLED,.ZSS_RIGHT_FOOTTXTDISABLED{font-family:Arial,sans-serif;font-size:9pt;font-weight:normal;font-style:normal;color:rgb(192,192,192);}
-.ZSS_GOLD_PUSHBUTTON{font-family:Arial,sans-serif;font-size:9pt;font-weight:normal;font-style:normal;font-variant:normal;color:rgb(0,0,0);background-color:rgb(255,204,0);}
-.ZSS_GREEN_PUSHBUTTON{font-family:Arial,sans-serif;font-size:9pt;font-weight:normal;font-style:normal;font-variant:normal;color:rgb(255,255,255);background-color:rgb(0,102,51);}
-.ZSS_BOLDTEXTRED{font-family:Arial,sans-serif;font-weight:bold;font-style:italic;font-variant:normal;color:rgb(255,0,0);}
-.ZSS_PTNAVLINK_HOVER,.ZSS_PTNAVLINK:HOVER{font-family:Verdana,Arial,Helvetica;font-size:11px;color:rgb(0,0,0);text-decoration: underline;line-height:18px;padding-top:3px;padding-bottom:3px;padding-left:5px;}
-.ZSS_PTNAVLINK{font-family:Verdana,Arial,Helvetica;font-size:11px;color:rgb(77,77,77);text-decoration: none;line-height:18px;padding-top:3px;padding-bottom:3px;padding-left:5px;}
-.ZSS_PSNAVPARENTLINKSEC{font-family:Verdana,Arial,Helvetica;font-size:11px;font-weight:bold;color:rgb(77,77,77);text-decoration: none;line-height:18px;}
-.ZSS_PSNAVPARENTLINK_HOVER,.ZSS_PSNAVPARENTLINK:HOVER{font-family:Verdana,Arial,Helvetica;font-size:12px;font-weight:bold;color:rgb(0,0,0);text-decoration: underline;line-height:32px;padding-top:9px;padding-bottom:9px;padding-left:10px;height:32px;}
-.ZSS_PSNAVPARENTLINK,.ZSS_PTNAVSELPARENTLINK{font-family:Verdana,Arial,Helvetica;font-size:12px;font-weight:bold;color:rgb(77,77,77);text-decoration: none;line-height:32px;padding-top:9px;padding-bottom:9px;padding-left:10px;height:32px;}
-.ZSS_SSSBUTTON_ACTIONLINK{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:bold;font-style:normal;color:rgb(0,67,27);background-color:rgb(255,229,151);text-decoration: none;text-transform:lowercase;text-align:center;line-height:16px;padding-left:2px;border-width:1px;border-top-color:rgb(142,203,98);border-bottom-color:rgb(95,154,35);border-left-color:rgb(142,203,98);border-right-color:rgb(95,154,35);border-top-style:none;border-bottom-style:solid;border-left-style:none;border-right-style:solid;height:16px;display:block;white-space:nowrap;cursor:hand;}
-.ZSS_BUTTON_ACTIONLINK{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:bold;font-style:normal;color:rgb(64,111,53);background-color:rgb(222,235,181);text-decoration: none;text-transform:none;text-align:center;line-height:16px;padding-left:2px;border-width:1px;border-top-color:rgb(142,203,98);border-bottom-color:rgb(95,154,35);border-left-color:rgb(142,203,98);border-right-color:rgb(95,154,35);border-top-style:none;border-bottom-style:solid;border-left-style:none;border-right-style:solid;height:16px;display:block;white-space:nowrap;cursor:hand;}
-.ZSS_GRIDTEXTCENTER{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:normal;font-style:normal;color:rgb(0,0,0);text-align:center;padding-top:1px;padding-bottom:1px;display:block;white-space:nowrap;}
-.ZSS_ACAD_HEADER{font-family:Verdana,Arial,sans-serif;font-size:10px;font-weight:normal;font-style:normal;color:rgb(0,67,27);}
-.ZSS_FEE_DETAIL{font-family:Verdana,Arial,sans-serif;font-size:11px;font-weight:bold;font-style:normal;color:rgb(0,0,0);}
-
-.ZSS_VARIABLE_MSG{font-family:Arial,Helvetica,sans-serif;font-size:14.667px;font-weight:normal;font-style:normal;color:#000;}  */
