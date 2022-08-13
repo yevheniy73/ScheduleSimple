@@ -25,7 +25,7 @@ def hide_block(html_sched_text, day_name, sched_hour, sched_minute, AB):
 
 #=========================================================================================================================
 
-def build_time_table(schedule, course_names_selected):
+def build_time_table(schedule, course_names_selected, table_counter):
     base = os.path.dirname(os.path.abspath(__file__))
 
     html_sched =open(os.path.join(base, 'SampleTemplate.html'))
@@ -67,7 +67,7 @@ def build_time_table(schedule, course_names_selected):
 
                 sched_pointer += 15
 
-    with open("time_table.html", "w") as file:
+    with open(f'time_table{table_counter}.html', "w") as file:
         file.write(str(html_sched_text.prettify()))
     return None
 
