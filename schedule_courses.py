@@ -3,7 +3,7 @@ import itertools
 
 day_letters = {"M" : 0, "T" : 1, "W" : 2, "H" : 3, "F" : 4}
 
-course_select_all_query = '''SELECT * FROM cmput_courses WHERE section_type = "LECTURE" AND start_date = "2023-01-05" AND course_name = (?)'''
+course_select_all_query = '''SELECT * FROM cmput_courses WHERE section_type = "LECTURE" AND start_date = "2022-09-01" AND course_name = (?)'''
 course_sections = [[], [], [], [], []]
 possible_schedules = []
 #=========================================================================================================================
